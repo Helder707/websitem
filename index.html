@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my coffee shop menu</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <section id="cart-section">
+            <h2>Cart</h2>
+            <ul id="cart"></ul>
+            <p id="total">Total: $0.00</p>
+        </section>        
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-item">
+                <img src="images/dish1.jpeg" alt="Delicious Dish">
+                <h3>Italian coffee</h3>
+                <p>A classic Italian pasta dish with creamy sauce.</p>
+                <p>Price: $12</p>
+                <button onclick="addToCart('Spaghetti Carbonara', 12)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/dish2.jpeg" alt="Fresh Salad">
+                <h3>Amercano</h3>
+                <p>Espresso diluted with hot water.</p>
+                <p>Price: $8</p>
+                <button onclick="addToCart('Garden Salad', 8)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/dish3.jpeg" alt="Beef">
+                <h3>Cappuccino</h3>
+                <p>equal parts espresso with milk.</p>
+                <p>Price: $15</p>
+                <button onclick="addToCart('Beef', 15)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/dish4.jpeg" alt="Fried potatoes">
+                <h3>Macchiato</h3>
+                <p>a late withadded chocolate syrup.</p>
+                <p>Price: $5</p>
+                <button onclick="addToCart('Fried Chips', 5)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/dish5.jpeg" alt="Fried Chicken">
+                <h3>Ristretto</h3>
+                <p>a short more concentrated shot.</p>
+                <p>Price: $7</p>
+                <button onclick="addToCart('Fried Chicken', 7)">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us: info@helderrestaurant.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
